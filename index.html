@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valeria & Hugo · 15 maja 2027 · Barcelona</title>
+<meta name="description" content="Valeria Durán i Hugo Castellanos biorą ślub w sobotę 15 maja 2027 w Barcelonie. Wszystkie informacje o weselu i potwierdzenie obecności w jednym miejscu.">
+<meta name="theme-color" content="#F7F3EC">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Valeria & Hugo · 15 maja 2027 · Barcelona">
+<meta property="og:description" content="Pobieramy się w sobotę 15 maja 2027 w Barcelonie. Ceremonia w Ogrodach Pedralbes, przyjęcie w Palacete Vilanova. #ValeriaIHugo2027">
+<meta property="og:image" content="https://ngs-dev-studio.github.io/demo-wesele-trend-2026/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Namiot z białych tkanin z żyrandolami i okrągłymi stołami na trawie">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%235A2E3A'/%3E%3Ctext x='32' y='42' font-family='serif' font-style='italic' font-size='28' text-anchor='middle' fill='%23F7F3EC'%3EV·H%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero.webp" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500;1,6..96,600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  /* Tokens propios: se sustituye la paleta de catálogo completa, no se extiende. */
+  tailwind.config = {
+    theme: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        cloud: '#F7F3EC',        /* Cloud Dancer (Pantone 2026), el lienzo */
+        sage: '#E4E9D9',         /* salvia / verde oliva suave, tendencia 2027 */
+        blush: '#F3DFD6',        /* rosa empolvado */
+        butter: '#F8EFCF',       /* amarillo mantequilla */
+        latte: '#E9DCCB',        /* mocha mousse claro */
+        wine: '#4A2530',         /* borgoña profundo, solo anclas */
+        bronze: '#7A4E22',
+        ink: '#2E2326',
+        'ink-soft': '#5E4A47'
+      },
+      fontFamily: {
+        display: ['"Bodoni Moda"', 'Didot', 'Georgia', 'serif'],
+        body: ['"Work Sans"', 'system-ui', 'sans-serif']
+      },
+      borderRadius: { none: '0', sm: '2px', DEFAULT: '2px', arch: '999px 999px 0 0', pill: '999px' },
+      extend: {}
+    }
+  };
+</script>
+<style>
+  :root { --hh: 72px; --ease-out: cubic-bezier(.22,.8,.3,1); --ember: #F0B35E; }
+  @media (min-width: 1200px) { :root { --hh: 84px; } }
+
+  /* Temas por sección: el color vive en variables, no en cada componente */
+  .t-cloud { --bg: #F7F3EC; --panel: #EFE7DA; --fg: #2E2326; --soft: #5E4A47; --accent: #7A4E22; --accent2: #7A3446; --line: rgba(122,78,34,.32); --btn-bg: #3A2A2E; --btn-fg: #F7F3EC; --btn-hover: #5A2E3A; --field-bg: #FFFDF8; --field-line: rgba(46,35,38,.6); --ico: #7A4E22; --err: #A12E22; }
+  .t-sage { --bg: #E4E9D9; --panel: #D7DFC9; --fg: #2E2326; --soft: #5E4A47; --accent: #7A4E22; --accent2: #7A3446; --line: rgba(122,78,34,.32); --btn-bg: #3A2A2E; --btn-fg: #F7F3EC; --btn-hover: #5A2E3A; --field-bg: #FFFDF8; --field-line: rgba(46,35,38,.6); --ico: #7A4E22; --err: #A12E22; }
+  .t-blush { --bg: #F3DFD6; --panel: #EBCFC4; --fg: #2E2326; --soft: #5E4A47; --accent: #7A4E22; --accent2: #7A3446; --line: rgba(122,78,34,.32); --btn-bg: #3A2A2E; --btn-fg: #F7F3EC; --btn-hover: #5A2E3A; --field-bg: #FFFDF8; --field-line: rgba(46,35,38,.6); --ico: #7A4E22; --err: #A12E22; }
+  .t-butter { --bg: #F8EFCF; --panel: #FFF9E6; --fg: #2E2326; --soft: #5E4A47; --accent: #7A4E22; --accent2: #7A3446; --line: rgba(122,78,34,.32); --btn-bg: #3A2A2E; --btn-fg: #F7F3EC; --btn-hover: #5A2E3A; --field-bg: #FFFDF8; --field-line: rgba(46,35,38,.6); --ico: #7A4E22; --err: #A12E22; }
+  .t-latte { --bg: #E9DCCB; --panel: #F7F3EC; --fg: #2E2326; --soft: #5E4A47; --accent: #7A4E22; --accent2: #7A3446; --line: rgba(122,78,34,.32); --btn-bg: #3A2A2E; --btn-fg: #F7F3EC; --btn-hover: #5A2E3A; --field-bg: #FFFDF8; --field-line: rgba(46,35,38,.6); --ico: #7A4E22; --err: #A12E22; }
+  .t-wine { --bg: #4A2530; --fg: #F7F3EC; --soft: #E8D6CB; --accent: #E8C48A; --accent2: #E8C48A; --line: rgba(232,196,138,.38); --panel: #5A2E3A; --btn-bg: #E8C48A; --btn-fg: #3A1E27; --btn-hover: #F3D8A8; --field-bg: #3A1E27; --field-line: rgba(247,243,236,.6); --ico: #E8C48A; --err: #F2A596; }
+  .t-cloud, .t-sage, .t-blush, .t-butter, .t-latte, .t-wine { background-color: var(--bg); color: var(--fg); }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; background: #F7F3EC; }
+  body { background: #F7F3EC; color: #2E2326; font-family: "Work Sans", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.65; font-weight: 400; overflow-x: clip; text-rendering: optimizeLegibility; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-stopped { overflow: hidden; }
+  section[id], footer[id] { scroll-margin-top: var(--hh); }
+  ::selection { background: #E8C48A; color: #2E2326; }
+  input, textarea, select, button { caret-color: #7A4E22; }
+  * { scrollbar-width: thin; scrollbar-color: #B89A74 #F7F3EC; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; } ::-webkit-scrollbar-track { background: #F7F3EC; } ::-webkit-scrollbar-thumb { background: #B89A74; border: 2px solid #F7F3EC; }
+  a { text-underline-offset: .28em; text-decoration-thickness: 1px; }
+  :focus-visible { outline: 2px solid var(--accent, #7A4E22); outline-offset: 3px; }
+  .skip { position: absolute; left: 16px; top: -64px; z-index: 100; background: #3A2A2E; color: #F7F3EC; padding: 12px 18px; }
+  .skip:focus { top: 12px; }
+
+  .wrap { width: 100%; max-width: 1240px; margin-inline: auto; padding-inline: 24px; }
+  @media (min-width: 768px) { .wrap { padding-inline: 40px; } }
+  .section { padding-block: 96px; }
+  @media (min-width: 1024px) { .section { padding-block: 144px; } }
+  .measure { max-width: 66ch; }
+  .display { font-family: "Bodoni Moda", Didot, Georgia, serif; font-weight: 500; letter-spacing: -.01em; line-height: 1.05; text-wrap: balance; font-variation-settings: "opsz" 40; }
+  .h2 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+  .lede { font-size: 1.1875rem; color: var(--soft); }
+  .soft { color: var(--soft); }
+  .ico { width: 1.4em; height: 1.4em; flex: none; color: var(--ico, #7A4E22); }
+  .tnum { font-variant-numeric: tabular-nums lining-nums; }
+
+  /* Botones */
+  .btn { text-align: center; line-height: 1.3; padding-block: 10px; display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 48px; padding-inline: 1.6rem; font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 500; border: 1px solid transparent; cursor: pointer; text-decoration: none; transition-property: background-color, color, border-color, transform; transition-duration: .2s; transition-timing-function: ease-out; }
+  .btn .ico { width: 1.25em; height: 1.25em; color: currentColor; }
+  #site-header .btn, .m-cta { white-space: nowrap; }
+  .btn-solid { background: var(--btn-bg); color: var(--btn-fg); border-color: var(--btn-bg); }
+  .btn-line { background: transparent; color: var(--fg); border-color: var(--fg); }
+  .btn:active { transform: scale(.97); }
+  @media (hover: hover) {
+    .btn-solid:hover { background: var(--btn-hover); border-color: var(--btn-hover); }
+    .btn-line:hover { background: var(--fg); color: var(--bg); }
+  }
+
+  /* Header */
+  .desk-only, .nav { display: none; } @media (min-width: 1200px) { .desk-only { display: inline-flex; } .nav { display: flex; align-items: center; gap: 36px; } .mob-only { display: none !important; } }
+  #menu-btn.mob-only { display: inline-flex; } .mob-only.flex { display: flex; }
+  #site-header { position: fixed; inset: 0 0 auto 0; z-index: 60; color: #2E2326; --btn-bg: #3A2A2E; --btn-fg: #F7F3EC; --btn-hover: #5A2E3A; }
+  #site-header .hdr-bg { position: absolute; inset: 0; background: rgba(247,243,236,.96); border-bottom: 1px solid rgba(122,78,34,.3); opacity: 0; transition: opacity .25s ease-out; pointer-events: none; }
+  #site-header.scrolled .hdr-bg { opacity: 1; }
+  #site-header .hdr-in { position: relative; height: var(--hh); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .mono { white-space: nowrap; font-family: "Bodoni Moda", serif; font-style: italic; font-size: 1.625rem; letter-spacing: .02em; text-decoration: none; line-height: 1; display: inline-flex; min-height: 44px; align-items: center; }
+  .nav a.navlink { white-space: nowrap; position: relative; font-size: .8125rem; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; padding: 10px 0; font-weight: 500; }
+  .nav a.navlink::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 1px; background: #7A4E22; transform: scaleX(0); transform-origin: left; transition: transform .25s var(--ease-out); }
+  .nav a.navlink[aria-current="true"]::after { transform: scaleX(1); }
+  @media (hover: hover) { .nav a.navlink:hover::after { transform: scaleX(1); } }
+  #menu-btn { width: 48px; height: 48px; background: transparent; border: 0; cursor: pointer; color: inherit; margin-right: -10px; align-items: center; justify-content: center; }
+  #menu-btn .ico { width: 30px; height: 30px; color: currentColor; }
+  #menu-btn .ico-x { display: none; }
+  #site-header.menu-open .hdr-bg { opacity: 0; }
+  #site-header.menu-open .btn { visibility: hidden; }
+  #site-header.menu-open #menu-btn .ico-list { display: none; }
+  #site-header.menu-open #menu-btn .ico-x { display: block; }
+  #menu { position: fixed; inset: 0; z-index: 55; background: #F7F3EC; color: #2E2326; display: flex; flex-direction: column; justify-content: center; padding: calc(var(--hh) + 16px) 32px 32px; opacity: 0; visibility: hidden; transition: opacity .25s ease-out, visibility 0s linear .25s; overflow-y: auto; --btn-bg: #3A2A2E; --btn-fg: #F7F3EC; --btn-hover: #5A2E3A; --accent: #7A4E22; }
+  #menu.open { opacity: 1; visibility: visible; transition: opacity .25s ease-out, visibility 0s; }
+  #menu a.m-link { font-family: "Bodoni Moda", serif; font-size: clamp(2rem, 9vw, 2.75rem); line-height: 1.15; text-decoration: none; display: block; padding: 8px 0; transform: translateY(12px); opacity: 0; transition: transform .35s var(--ease-out), opacity .35s ease-out; }
+  #menu.open a.m-link { transform: none; opacity: 1; }
+  #menu.open a.m-link:nth-child(2) { transition-delay: .04s; } #menu.open a.m-link:nth-child(3) { transition-delay: .08s; } #menu.open a.m-link:nth-child(4) { transition-delay: .12s; } #menu.open a.m-link:nth-child(5) { transition-delay: .16s; } #menu.open a.m-link:nth-child(6) { transition-delay: .2s; }
+  #menu .m-cta { margin-top: 32px; }
+  @media (min-width: 1200px) { #menu { display: none; } }
+
+  /* Hero: la carpa encendida al atardecer */
+  .hero { position: relative; isolation: isolate; display: flex; align-items: center; justify-content: center; text-align: center; height: 100svh; min-height: 560px; padding: calc(var(--hh) + 8px) 0 28px; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; z-index: -3; }
+  .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(58% 48% at 50% 46%, rgba(247,243,236,.78), rgba(247,243,236,0) 100%), linear-gradient(to bottom, rgba(247,243,236,.62) 0%, rgba(247,243,236,.22) 38%, rgba(247,243,236,.45) 72%, rgba(247,243,236,.96) 100%); }
+  .sparks { position: absolute; inset: 0; z-index: -2; pointer-events: none; overflow: hidden; }
+  .spark { position: absolute; width: var(--s); height: var(--s); border-radius: 50%; background: #FFF1CC; box-shadow: 0 0 5px 2px rgba(232,170,80,.8), 0 0 14px 4px rgba(232,170,80,.35); opacity: .1; animation: twinkle var(--d) ease-in-out var(--l) infinite alternate; }
+  .sparks.paused .spark { animation-play-state: paused; }
+  @keyframes twinkle { from { opacity: .08; transform: scale(.85); } to { opacity: .95; transform: scale(1.1); } }
+  .hero-in { display: flex; flex-direction: column; align-items: center; }
+  .hero h1 { font-size: min(15vw, 8.6svh); line-height: .95; letter-spacing: -.02em; text-shadow: 0 1px 22px rgba(247,243,236,.7); }
+  .hero h1 .l1, .hero h1 .l2 { display: block; }
+  .hero h1 .amp { font-style: italic; color: var(--accent2); margin-right: .14em; }
+  .hero-date { font-family: "Bodoni Moda", serif; font-style: italic; font-size: clamp(1.05rem, 4.4vw, 1.75rem); color: var(--accent2); margin-top: 14px; }
+  .hero .lede { color: var(--fg); max-width: 34ch; margin-top: 10px; font-size: 1rem; line-height: 1.5; }
+  .hero-cd { margin-top: 20px; width: 100%; display: flex; justify-content: center; }
+  .cue { display: none; }
+  @media (max-height: 720px) { .hero .lede { display: none; } }
+  @media (min-width: 768px) {
+    .hero h1 { font-size: clamp(3.75rem, 9vw, 6.5rem); }
+    .hero h1 .l1, .hero h1 .l2 { display: inline; }
+    .hero-date { margin-top: 20px; }
+    .hero .lede { font-size: 1.1875rem; margin-top: 14px; }
+    .hero-cd { margin-top: 36px; }
+  }
+  @media (min-width: 1024px) {
+    .cue { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); text-decoration: none; min-height: 44px; }
+    .cue i { display: block; width: 1px; height: 36px; background: rgba(122,78,34,.4); position: relative; overflow: hidden; }
+    .cue i::after { content: ""; position: absolute; left: 0; top: 0; width: 1px; height: 14px; background: #7A3446; animation: cue 2.4s var(--ease-out) infinite; }
+  }
+  @keyframes cue { 0% { transform: translateY(-14px); } 70%, 100% { transform: translateY(36px); } }
+
+  /* Cuenta atrás: marco dorado y barrido de luz */
+  .countdown { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid rgba(122,78,34,.6); overflow: hidden; width: 100%; max-width: 520px; background: rgba(247,243,236,.55); color: #2E2326; }
+  .countdown .cd-cell { padding: 12px 4px 10px; text-align: center; position: relative; }
+  .countdown .cd-cell + .cd-cell::before { content: ""; position: absolute; left: 0; top: 18%; bottom: 18%; width: 1px; background: rgba(122,78,34,.4); }
+  .cd-num { display: block; font-weight: 500; font-variation-settings: "opsz" 40; font-family: "Bodoni Moda", serif; font-size: clamp(1.6rem, 7.5vw, 3rem); line-height: 1; letter-spacing: -.02em; }
+  .cd-lab { display: block; margin-top: 6px; font-size: .6875rem; letter-spacing: .06em; text-transform: uppercase; color: var(--soft); }
+  @media (min-width: 768px) { .countdown .cd-cell { padding: 18px 6px 14px; } .cd-lab { letter-spacing: .14em; margin-top: 8px; font-size: .75rem; } }
+  .countdown::after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 38%; pointer-events: none; background: linear-gradient(100deg, rgba(232,170,80,0) 0%, rgba(232,170,80,.4) 50%, rgba(232,170,80,0) 100%); transform: translateX(-130%); }
+  .countdown.sweep::after { transform: translateX(340%); transition: transform .95s var(--ease-out); }
+  @media (hover: hover) { .countdown:hover::after { transform: translateX(340%); transition: transform .95s var(--ease-out); } }
+
+  /* Historia: el pasaje más rico */
+  .historia { position: relative; background-image: radial-gradient(60% 40% at 12% 0%, rgba(248,239,207,.9), transparent 70%), radial-gradient(50% 35% at 95% 62%, rgba(243,223,214,.7), transparent 70%); }
+  .hitos { position: relative; display: grid; gap: 88px; margin-top: 72px; }
+  .hito { display: grid; gap: 28px; position: relative; }
+  .hito::before { display: none; content: attr(data-year); position: absolute; z-index: 0; top: -.28em; left: -.04em; font-family: "Bodoni Moda", serif; font-style: italic; font-size: clamp(6rem, 30vw, 9rem); line-height: 1; letter-spacing: -.04em; color: rgba(122,78,34,.13); pointer-events: none; }
+  .hito > * { position: relative; z-index: 1; }
+  .hito-img { position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: #D7DFC9; }
+  .hito-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hito-date { font-family: "Bodoni Moda", serif; font-style: italic; font-size: clamp(2.25rem, 6vw, 3.5rem); line-height: 1; color: var(--accent2); }
+  .hito h3 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin-top: 14px; }
+  .hito p { color: var(--soft); max-width: 44ch; margin-top: 14px; }
+  .hito:nth-child(2) .hito-img { border-radius: 999px 999px 0 0; aspect-ratio: 3 / 4; width: 82%; }
+  .hito-final { background: #5A2E3A; color: #F7F3EC; --accent2: #E8C48A; margin-inline: -24px; padding: 48px 24px 40px; overflow: hidden; }
+  .hito-final::before { display: none; color: rgba(232,196,138,.2); }
+  .hito-final p { color: #F1DFCB; }
+  .hito-final .hito-date { color: #E8C48A; }
+  .hito-final .hito-img { aspect-ratio: 3 / 2; background: #3A1E27; }
+  @media (min-width: 768px) { .hito-final { margin-inline: 0; padding: 64px 56px; } }
+  @media (min-width: 1024px) {
+    .hitos { gap: 150px; }
+    .hitos::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(122,78,34,.35); }
+    .hito { grid-template-columns: repeat(12, 1fr); gap: 0 24px; align-items: center; }
+    .hito::before { display: block; font-size: clamp(9rem, 16vw, 14rem); top: -.5em; }
+    .hito:nth-child(odd)::before { left: auto; right: 2%; }
+    .hito:nth-child(3)::before { left: 4%; right: auto; }
+    .hito:nth-child(1) .hito-img { grid-column: 1 / 7; grid-row: 1; aspect-ratio: 4 / 5; margin-right: -48px; z-index: 2; }
+    .hito:nth-child(1) .hito-txt { grid-column: 8 / 13; grid-row: 1; }
+    .hito:nth-child(2) .hito-img { grid-column: 8 / 12; grid-row: 1; width: 100%; aspect-ratio: 3 / 4; margin-left: -24px; }
+    .hito:nth-child(2) .hito-txt { grid-column: 1 / 7; grid-row: 1; padding-top: 120px; padding-right: 40px; }
+    .hito:nth-child(3) .hito-img { grid-column: 2 / 8; grid-row: 1; aspect-ratio: 1 / 1; }
+    .hito:nth-child(3) .hito-txt { grid-column: 9 / 13; grid-row: 1; align-self: start; padding-top: 64px; }
+    .hito:not(.hito-final)::after { content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 11px; margin: -5px 0 0 -5px; border-radius: 50%; background: #7A3446; box-shadow: 0 0 0 6px #E4E9D9, 0 0 0 7px rgba(122,78,34,.35); z-index: 3; }
+    .hito-final { grid-column: 1 / -1; z-index: 1; margin-inline: -40px; padding: 88px 64px; }
+    .hito-final .hito-img { grid-column: 1 / 7; grid-row: 1; aspect-ratio: 3 / 2; }
+    .hito-final .hito-txt { grid-column: 8 / 13; grid-row: 1; }
+    .hito-final::before { right: 3%; top: -.25em; }
+  }
+  .js-reveal .hito .hito-img { clip-path: inset(0 0 100% 0); }
+  .js-reveal .hito .hito-img img { transform: scale(1.08); }
+  .js-reveal .hito .hito-txt > * { opacity: 0; transform: translateY(20px); }
+  .js-reveal .hito::before { opacity: 0; transform: translateY(24px); transition: opacity .9s ease-out, transform .9s var(--ease-out); }
+  .js-reveal .hito.hito-in::before { opacity: 1; transform: none; }
+
+  /* La boda */
+  .venues { display: grid; gap: 80px; margin-top: 72px; }
+  @media (min-width: 1024px) { .venues { grid-template-columns: 1fr 1fr; gap: 72px; } }
+  .venue-img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; display: block; border-radius: 999px 999px 0 0; }
+  .venue h3 { font-size: clamp(2rem, 4.4vw, 3rem); margin-top: 32px; }
+  .venue h3 em { display: block; font-size: clamp(1.25rem, 2.4vw, 1.625rem); font-style: italic; color: var(--accent2); margin-top: 8px; letter-spacing: 0; }
+  .venue dl { display: grid; gap: 16px; margin-top: 28px; }
+  .venue dl > div { display: flex; gap: 14px; align-items: flex-start; }
+  .venue dt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .venue dd { margin: 0; }
+  .map { position: relative; margin-top: 32px; aspect-ratio: 16 / 10; background: var(--panel); }
+  .map iframe { width: 100%; height: 100%; border: 0; display: block; pointer-events: none; }
+  .map.active iframe { pointer-events: auto; }
+  .map-hint { position: absolute; left: 12px; bottom: 12px; z-index: 2; background: #F7F3EC; color: #2E2326; font-size: .8125rem; padding: 8px 12px; pointer-events: none; transition: opacity .2s ease-out; }
+  .map.active .map-hint { opacity: 0; }
+
+  /* Galería */
+  .gallery { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: -24px; padding-inline: 24px; scroll-padding-inline: 24px; margin-top: 56px; padding-bottom: 12px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .gallery::-webkit-scrollbar { display: none; }
+  .gallery button { flex: 0 0 78%; scroll-snap-align: start; aspect-ratio: 4 / 5; padding: 0; border: 0; background: var(--panel); cursor: zoom-in; overflow: hidden; position: relative; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s var(--ease-out); }
+  .gal-count { margin-top: 12px; font-size: .875rem; color: var(--soft); letter-spacing: .03em; }
+  @media (min-width: 768px) {
+    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 250px; gap: 14px; overflow: visible; margin-inline: 0; padding: 0; scroll-snap-type: none; }
+    .gallery button { flex: none; aspect-ratio: auto; }
+    .gallery button:nth-child(1) { grid-column: 1; grid-row: 1 / span 2; }
+    .gallery button:nth-child(2) { grid-column: 2 / span 2; grid-row: 1; }
+    .gallery button:nth-child(3) { grid-column: 4; grid-row: 1 / span 2; }
+    .gallery button:nth-child(4) { grid-column: 2; grid-row: 2; }
+    .gallery button:nth-child(5) { grid-column: 3; grid-row: 2; }
+    .gallery button:nth-child(6) { grid-column: 1 / span 2; grid-row: 3 / span 2; }
+    .gallery button:nth-child(7) { grid-column: 3; grid-row: 3 / span 2; }
+    .gallery button:nth-child(8) { grid-column: 4; grid-row: 3; }
+    .gallery button:nth-child(9) { grid-column: 4; grid-row: 4; }
+    .gallery button:nth-child(10) { grid-column: 1 / -1; grid-row: 5; }
+    .gal-count { display: none; }
+  }
+  @media (hover: hover) { .gallery button:hover img { transform: scale(1.04); } }
+  #lb { position: fixed; inset: 0; z-index: 90; background: rgba(247,243,236,.98); display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity .2s ease-out, visibility 0s linear .2s; touch-action: pan-y; }
+  #lb.open { opacity: 1; visibility: visible; transition: opacity .2s ease-out, visibility 0s; }
+  #lb figure { margin: 0; max-width: min(92vw, 1100px); max-height: 86svh; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  #lb img { max-width: 100%; max-height: calc(86svh - 48px); object-fit: contain; display: block; }
+  #lb figcaption { color: #5E4A47; font-size: .9375rem; text-align: center; }
+  .lb-btn { position: absolute; width: 52px; height: 52px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 1px solid #7A4E22; color: #2E2326; cursor: pointer; transition-property: background-color, color, transform; transition-duration: .2s; }
+  .lb-btn .ico { color: currentColor; width: 24px; height: 24px; }
+  .lb-btn:active { transform: scale(.97); }
+  .lb-btn:focus-visible { outline: 2px solid #7A3446; outline-offset: 3px; }
+  @media (hover: hover) { .lb-btn:hover { background: #3A2A2E; color: #F7F3EC; } }
+  .lb-close { top: 16px; right: 16px; } .lb-prev { left: 12px; top: 50%; margin-top: -26px; } .lb-next { right: 12px; top: 50%; margin-top: -26px; }
+  @media (max-width: 767px) { .lb-prev, .lb-next { top: auto; bottom: 20px; margin: 0; } .lb-prev { left: 20px; } .lb-next { right: 20px; } #lb figure { max-height: 78svh; } #lb img { max-height: calc(78svh - 48px); } }
+
+  /* Info */
+  .info-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 64px; }
+  .info-grid > * { min-width: 0; }
+  @media (min-width: 1024px) { .info-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-rows: auto auto; } .info-dress { grid-column: 2; grid-row: 1 / span 2; } }
+  .panel { background: var(--panel); padding: 32px 28px; }
+  @media (min-width: 768px) { .panel { padding: 44px 44px; } }
+  .panel h3 { font-size: clamp(1.75rem, 3.4vw, 2.25rem); margin-bottom: 8px; }
+  .rows { margin-top: 20px; }
+  .row { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; padding: 18px 0; border-top: 1px solid var(--line); }
+  .row > div:nth-child(2) { flex: 1 1 9rem; min-width: 0; }
+  .row:first-child { border-top: 0; padding-top: 6px; }
+  .row b { font-weight: 500; display: block; }
+  .row span.sub { color: var(--soft); display: block; font-size: .9375rem; }
+  .row .price { margin-left: auto; text-align: right; white-space: nowrap; font-size: .9375rem; color: var(--soft); padding-left: 12px; }
+  .info-dress { background: #F3DFD6; align-self: start; }
+  .swatches { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 28px; }
+  .swatch i { display: block; aspect-ratio: 1; box-shadow: inset 0 0 0 1px rgba(46,35,38,.16); }
+  .swatch span { display: block; margin-top: 8px; font-size: .75rem; color: var(--soft); line-height: 1.3; }
+  .dress-cols { display: grid; gap: 28px; margin-top: 36px; }
+  @media (min-width: 768px) { .dress-cols { grid-template-columns: 1fr 1fr; gap: 40px; } }
+  .dress-cols h4 { display: flex; gap: 12px; align-items: center; font-weight: 500; font-size: 1.25rem; margin-bottom: 8px; }
+  .dress-cols p { font-size: .9375rem; color: var(--soft); }
+
+  /* Regalo */
+  .iban { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 20px; padding: 20px 24px; margin-top: 32px; background: var(--bg); box-shadow: inset 0 0 0 1px var(--line); }
+  .iban code { font-family: "Work Sans", sans-serif; font-size: clamp(1.0625rem, 4vw, 1.375rem); letter-spacing: .08em; font-variant-numeric: tabular-nums lining-nums; font-weight: 500; }
+  .gifts { list-style: none; margin: 40px auto 0; padding: 0; max-width: 520px; text-align: left; }
+  .gifts li { display: flex; flex-direction: column; gap: 2px; padding: 16px 0; border-top: 1px solid var(--line); }
+  .gifts li:last-child { border-bottom: 1px solid var(--line); }
+  .gifts b { font-family: "Bodoni Moda", serif; font-weight: 400; font-size: 1.375rem; }
+  .gifts span { color: var(--soft); font-size: .9375rem; }
+
+  /* RSVP */
+  .rsvp-grid { display: grid; gap: 56px; }
+  @media (min-width: 1024px) { .rsvp-grid { grid-template-columns: 4fr 6fr; gap: 96px; align-items: start; } .rsvp-aside { position: sticky; top: calc(var(--hh) + 32px); } }
+  .deadline { display: inline-flex; align-items: center; gap: 14px; margin-top: 28px; padding: 14px 20px; background: var(--panel); }
+  .field { display: grid; gap: 8px; }
+  .field input, .field textarea { scroll-margin-top: calc(var(--hh) + 32px); }
+  .field > label, .field > legend { font-size: .9375rem; letter-spacing: .01em; font-weight: 500; }
+  .field .hint { font-size: .875rem; color: var(--soft); margin-top: -2px; }
+  .field input[type=text], .field textarea { width: 100%; background: var(--field-bg); border: 1px solid var(--field-line); padding: 14px 16px; min-height: 52px; font: inherit; color: var(--fg); border-radius: 2px; transition: border-color .2s ease-out; }
+  .field ::placeholder { color: var(--soft); opacity: 1; }
+  .field textarea { min-height: 120px; resize: vertical; }
+  .field input:focus-visible, .field textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-color: var(--fg); }
+  .field [aria-invalid="true"] { border-color: var(--err); }
+  .err { color: var(--err); font-size: .875rem; display: none; align-items: center; gap: 8px; }
+  .err.show { display: flex; }
+  .err .ico { color: var(--err); width: 1.1em; height: 1.1em; }
+  .choice { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .choice label { position: relative; cursor: pointer; }
+  .choice input { position: absolute; opacity: 0; inset: 0; }
+  .choice span { display: flex; align-items: center; justify-content: center; text-align: center; min-height: 56px; padding: 8px 12px; border: 1px solid var(--field-line); transition-property: background-color, color, border-color; transition-duration: .2s; transition-timing-function: ease-out; }
+  .choice input:checked + span { background: var(--btn-bg); color: var(--btn-fg); border-color: var(--btn-bg); }
+  .choice input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 3px; }
+  @media (hover: hover) { .choice input:not(:checked) + span:hover { background: var(--panel); } }
+  .stepper { display: inline-flex; align-items: stretch; border: 1px solid var(--field-line); width: fit-content; }
+  .stepper button { width: 52px; min-height: 52px; background: var(--field-bg); border: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition-property: background-color, transform; transition-duration: .2s; transition-timing-function: ease-out; color: var(--fg); }
+  .stepper button:active { transform: scale(.97); }
+  .stepper button:disabled { cursor: not-allowed; opacity: .4; }
+  .stepper button .ico { color: var(--fg); }
+  .stepper output { min-width: 64px; display: inline-flex; align-items: center; justify-content: center; font-family: "Bodoni Moda", serif; font-size: 1.5rem; border-inline: 1px solid var(--field-line); }
+  @media (hover: hover) { .stepper button:not(:disabled):hover { background: var(--panel); } }
+  .stepper.is-off { opacity: .5; }
+  #rsvp-ok { display: none; }
+  #rsvp-ok.show { display: block; animation: rise .5s var(--ease-out) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  .ok-box { padding: 48px 32px; background: var(--panel); }
+
+  /* FAQ */
+  .faq-grid { display: grid; gap: 48px; }
+  @media (min-width: 1024px) { .faq-grid { grid-template-columns: 4fr 7fr; gap: 96px; } .faq-grid > header { position: sticky; top: calc(var(--hh) + 32px); align-self: start; } }
+  .faq-item { border-top: 1px solid var(--line); }
+  .faq-item:last-child { border-bottom: 1px solid var(--line); }
+  .faq-q { font-variation-settings: "opsz" 36; font-weight: 500; width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; text-align: left; padding: 22px 0; min-height: 64px; background: transparent; border: 0; cursor: pointer; font-family: "Bodoni Moda", serif; font-size: clamp(1.25rem, 3vw, 1.5rem); line-height: 1.25; color: var(--fg); }
+  .faq-q .ico { transition: transform .3s var(--ease-out); }
+  .faq-q[aria-expanded="true"] .ico { transform: rotate(45deg); }
+  .faq-a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s var(--ease-out); }
+  .faq-a > div { overflow: hidden; }
+  .faq-a.open { grid-template-rows: 1fr; }
+  .faq-a p { padding: 0 0 26px; max-width: 62ch; color: var(--soft); }
+  .faq-a a { color: var(--fg); }
+
+  /* Música, contacto */
+  .hashtag { font-family: "Bodoni Moda", serif; font-style: italic; font-weight: 500; font-variation-settings: "opsz" 48; font-size: clamp(1.6rem, 8vw, 3.4rem); line-height: 1.05; white-space: nowrap; color: var(--accent2); }
+  @media (min-width: 1024px) { .hashtag { font-size: clamp(2rem, 3.9vw, 3.4rem); } }
+  .phone { display: flex; flex-direction: column; gap: 4px; text-decoration: none; padding: 20px 0; border-top: 1px solid var(--line); min-height: 64px; }
+  .phone strong { font-family: "Bodoni Moda", serif; font-weight: 500; font-variation-settings: "opsz" 36; font-size: clamp(1.625rem, 5vw, 2.25rem); line-height: 1.1; font-variant-numeric: lining-nums; }
+  .phone span { color: var(--soft); font-size: .9375rem; }
+  @media (hover: hover) { .phone:hover strong { text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: 1px; } }
+
+  footer.site-foot { position: relative; overflow: hidden; background-image: radial-gradient(60% 80% at 50% 120%, rgba(232,196,138,.2), transparent 70%); }
+  .foot-links a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; color: var(--soft); font-size: .9375rem; padding-right: 4px; }
+  @media (hover: hover) { .foot-links a:hover { color: var(--fg); text-decoration: underline; } }
+
+  .phones { border-bottom: 1px solid var(--line); }
+  .foot-credit { border-top: 1px solid var(--line); }
+
+  /* Reveal (solo si GSAP cargó) */
+  .js-reveal [data-reveal] { opacity: 0; transform: translateY(24px); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .js-reveal [data-reveal] { opacity: 1; transform: none; }
+    .cue i::after, .spark { animation: none; }
+    .spark { opacity: .6; }
+    *, *::before, *::after { transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Przejdź do treści</a>
+
+<header id="site-header">
+  <div class="hdr-bg"></div>
+  <div class="wrap hdr-in">
+    <a href="#inicio" class="mono" aria-label="Valeria i Hugo — przejdź na początek strony">V · H</a>
+    <nav class="nav" aria-label="Główna">
+      <a class="navlink" href="#inicio">Start</a>
+      <a class="navlink" href="#historia">Nasza historia</a>
+      <a class="navlink" href="#boda">Wesele</a>
+      <a class="navlink" href="#galeria">Galeria</a>
+      <a class="navlink" href="#info">Informacje dla gości</a>
+      <a class="navlink" href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-solid desk-only" href="#rsvp">Potwierdź obecność</a>
+    <div class="mob-only flex items-center gap-1"><a class="btn btn-solid !min-h-[44px] !px-4" href="#rsvp" aria-label="Potwierdź obecność">Potwierdź</a>
+    <button id="menu-btn" class="mob-only" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu">
+      <span class="ico-list"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"/></svg></span><span class="ico-x"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></span>
+    </button></div>
+  </div>
+</header>
+
+<div id="menu" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+  <a class="m-link" href="#inicio">Start</a>
+  <a class="m-link" href="#historia">Nasza historia</a>
+  <a class="m-link" href="#boda">Wesele</a>
+  <a class="m-link" href="#galeria">Galeria</a>
+  <a class="m-link" href="#info">Informacje dla gości</a>
+  <a class="m-link" href="#faq">FAQ</a>
+  <a class="btn btn-solid m-cta self-start" href="#rsvp">Potwierdź obecność</a>
+</div>
+
+<main id="contenido">
+
+<!-- ================= HERO ================= -->
+<section id="inicio" class="hero t-cloud" aria-label="Strona główna">
+  <div class="hero-bg"><img src="img/hero.webp" width="1600" height="1067" alt="Namiot z białych tkanin z żyrandolami i okrągłymi stołami na trawie" fetchpriority="high"></div>
+  <div class="sparks" id="sparks" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <h1 class="display"><span class="l1">Valeria</span> <span class="l2"><span class="amp">&amp;</span>Hugo</span></h1>
+    <p class="hero-date">Sobota, 15 maja 2027 · Barcelona</p>
+    <p class="lede">Pobieramy się. Chcemy świętować z ludźmi, dzięki którym warto było tu dotrzeć.</p>
+    <div class="hero-cd">
+      <div class="countdown tnum" id="countdown" role="timer" aria-label="Czas pozostały do ślubu">
+        <div class="cd-cell"><span class="cd-num" data-cd="d">000</span><span class="cd-lab">Dni</span></div>
+        <div class="cd-cell"><span class="cd-num" data-cd="h">00</span><span class="cd-lab">Godziny</span></div>
+        <div class="cd-cell"><span class="cd-num" data-cd="m">00</span><span class="cd-lab">Minuty</span></div>
+        <div class="cd-cell"><span class="cd-num" data-cd="s">00</span><span class="cd-lab">Sekundy</span></div>
+      </div>
+    </div>
+    <p id="cd-done" class="hero-date" hidden>Dziś jest ten dzień.</p>
+  </div>
+  <a class="cue" href="#historia"><i aria-hidden="true"></i>Nasza historia</a>
+</section>
+
+<!-- ================= NUESTRA HISTORIA ================= -->
+<section id="historia" class="historia section t-sage" aria-labelledby="t-historia">
+  <div class="wrap">
+    <div class="max-w-3xl" data-reveal>
+      <h2 id="t-historia" class="display h2">Nasza historia</h2>
+      <p class="lede mt-6 measure">Cztery chwile, które doprowadziły nas do 15 maja.</p>
+    </div>
+
+    <div class="hitos">
+      <article class="hito" data-year="2019">
+        <div class="hito-img"><img src="img/historia-1.webp" width="1000" height="1652" loading="lazy" alt="Zdobiona fasada z mozaiką i jasnymi balkonami w jesienne popołudnie w Barcelonie"></div>
+        <div class="hito-txt">
+          <p class="hito-date !m-0">Październik 2019</p>
+          <h3 class="display">Fasada i spór</h3>
+          <p>Ona twierdziła, że najpiękniejsze schody w Barcelonie są w Gràcii. On, który akurat tamtędy przechodził, przyznał jej rację, choć jej nie znał. Skończyli na kolacji przy tym samym stole.</p>
+        </div>
+      </article>
+
+      <article class="hito" data-year="2022">
+        <div class="hito-img"><img src="img/historia-2.webp" width="1000" height="1500" loading="lazy" alt="Drewniany pociąg na kamiennym wiadukcie wśród sosen w śródziemnomorskich górach"></div>
+        <div class="hito-txt">
+          <p class="hito-date !m-0">Lipiec 2022</p>
+          <h3 class="display">Pociąg bez planu</h3>
+          <p>Ich pierwsza dłuższa podróż: drewniany pociąg przez góry, hotel bez rezerwacji i tydzień bez patrzenia na zegarek. Wrócili pewni, że z nikim innym nie chcą podróżować.</p>
+        </div>
+      </article>
+
+      <article class="hito" data-year="2024">
+        <div class="hito-img"><img src="img/historia-3.webp" width="1000" height="1500" loading="lazy" alt="Gałązki eukaliptusa i białe kwiaty na jasnym tle"></div>
+        <div class="hito-txt">
+          <p class="hito-date !m-0">Marzec 2024</p>
+          <h3 class="display">Dom z eukaliptusem</h3>
+          <p>Pierwsze wspólne mieszkanie. Pierwszą ozdobą była gałązka eukaliptusa w przedpokoju i od tamtej pory nie zabrakło jej ani jednego tygodnia.</p>
+        </div>
+      </article>
+
+      <article class="hito hito-final" data-year="2025">
+        <div class="hito-img"><img src="img/historia-4.webp" width="1000" height="666" loading="lazy" alt="Dwie złote obrączki na jasnej tkaninie"></div>
+        <div class="hito-txt">
+          <p class="hito-date !m-0">Wrzesień 2025</p>
+          <h3 class="display">Oświadczyny</h3>
+          <p>Na punkcie widokowym nad miastem, bez kamer i publiczności, Hugo zadał pytanie, które ćwiczył od miesięcy. Valeria powiedziała „tak”, zanim dokończył zdanie.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LA BODA ================= -->
+<section id="boda" class="section t-cloud" aria-labelledby="t-boda">
+  <div class="wrap">
+    <div class="max-w-3xl" data-reveal>
+      <h2 id="t-boda" class="display h2">Wesele</h2>
+      <p class="lede mt-6 measure">Dwa miejsca, jedno sobotnie popołudnie. Ceremonia pod lekkimi tkaninami w południowym świetle; przyjęcie wśród lamp i świec, do późna.</p>
+    </div>
+
+    <div class="venues">
+      <article class="venue" data-reveal>
+        <img class="venue-img" src="img/ceremonia.webp" width="1300" height="867" loading="lazy" alt="Jasny namiot z okrągłymi stołami i drewnianymi krzesłami, otwarty na krajobraz wzgórz" style="object-position:50% 50%">
+        <h3 class="display">Ślub cywilny<em>Ogrody Pedralbes</em></h3>
+        <p class="mt-5 measure">Namiot z lekkich tkanin otwarty na ogród, białe kwiaty i zieleń żywopłotów. Południowe światło przesącza się między fałdami i wszystko zdaje się płynąć wolniej.</p>
+        <dl>
+          <div><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm62-90a6,6,0,0,1-6,6H128a6,6,0,0,1-6-6V72a6,6,0,0,1,12,0v50h50A6,6,0,0,1,190,128Z"/></svg><div><dt>Godzina</dt><dd>12:30</dd></div></div>
+          <div><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg><div><dt>Adres</dt><dd>Avda. Diagonal 590, Pedralbes<br>08034 Barcelona</dd></div></div>
+        </dl>
+        <div class="map"><span class="map-hint">Kliknij, aby przesuwać mapę</span><iframe title="Mapa ceremonii: Ogrody Pedralbes, Barcelona" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Jardins+del+Palau+de+Pedralbes,+Barcelona&amp;hl=pl&amp;z=15&amp;output=embed"></iframe></div>
+        <a class="btn btn-line mt-6" href="https://www.google.com/maps/dir/?api=1&amp;destination=Jardins+del+Palau+de+Pedralbes,+Barcelona" target="_blank" rel="noopener">Jak dojechać <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg><span class="sr-only"> do Ogrodów Pedralbes (otwiera się w nowej karcie)</span></a>
+      </article>
+
+      <article class="venue" data-reveal>
+        <img class="venue-img" src="img/celebracion.webp" width="1300" height="867" loading="lazy" alt="Sala ze złotym sufitem, dużymi żyrandolami i nakrytymi stołami" style="object-position:50% 50%">
+        <h3 class="display">Przyjęcie weselne<em>Palacete Vilanova</em></h3>
+        <p class="mt-5 measure">Dawny budynek przemysłowy zamieniony w pałacyk: bardzo wysokie sufity, żyrandole, a gdy zapada wieczór, setki zapalonych świec na obiad i tańce.</p>
+        <dl>
+          <div><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm62-90a6,6,0,0,1-6,6H128a6,6,0,0,1-6-6V72a6,6,0,0,1,12,0v50h50A6,6,0,0,1,190,128Z"/></svg><div><dt>Godzina</dt><dd>14:00</dd></div></div>
+          <div><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg><div><dt>Adres</dt><dd>C. Ferran Turné 8<br>Barcelona</dd></div></div>
+        </dl>
+        <div class="map"><span class="map-hint">Kliknij, aby przesuwać mapę</span><iframe title="Mapa przyjęcia: ulica Ferran Turné, Barcelona" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Carrer+de+Ferran+Turn%C3%A9,+Barcelona&amp;hl=pl&amp;z=16&amp;output=embed"></iframe></div>
+        <a class="btn btn-line mt-6" href="https://www.google.com/maps/dir/?api=1&amp;destination=Carrer+de+Ferran+Turn%C3%A9,+Barcelona" target="_blank" rel="noopener">Jak dojechać <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg><span class="sr-only"> do Palacete Vilanova (otwiera się w nowej karcie)</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section id="galeria" class="section t-blush" aria-labelledby="t-galeria">
+  <div class="wrap">
+    <div class="max-w-3xl" data-reveal>
+      <h2 id="t-galeria" class="display h2">Galeria</h2>
+      <p class="lede mt-6 measure">Świece, półprzezroczyste tkaniny, lampy i złota godzina: atmosfera, jakiej chcemy na 15 maja.</p>
+    </div>
+    <div class="gallery" id="gallery" data-reveal>
+      <button type="button" data-i="0"><img src="img/g02.webp" width="1100" height="1650" loading="lazy" alt="Czarne latarnie z zapalonymi świecami na nakrytym stole pod gołym niebem"></button>
+      <button type="button" data-i="1"><img src="img/g01.webp" width="1200" height="800" loading="lazy" alt="Girlandy świetlne z zawieszonymi kulami na tle zachodzącego nieba z chmurami"></button>
+      <button type="button" data-i="2"><img src="img/g09.webp" width="1100" height="1653" loading="lazy" alt="Duży oświetlony kryształowy żyrandol odbijający się w przeszklonej ścianie"></button>
+      <button type="button" data-i="3"><img src="img/g04.webp" width="1100" height="1650" loading="lazy" alt="Rozmyte białe róże na tle pomarańczowego światła zachodu słońca"></button>
+      <button type="button" data-i="4"><img src="img/g08.webp" width="1100" height="1375" loading="lazy" alt="Szklana latarnia na stole przed morzem o zmierzchu"></button>
+      <button type="button" data-i="5"><img src="img/g03.webp" width="1200" height="800" loading="lazy" alt="Długi drewniany stół pod namiotem otwartym na ogród, o zachodzie słońca"></button>
+      <button type="button" data-i="6"><img src="img/g10.webp" width="1100" height="1650" loading="lazy" alt="Wazon z pomarańczowymi kwiatami i rozmytymi światłami w tle"></button>
+      <button type="button" data-i="7"><img src="img/g05.webp" width="1100" height="734" loading="lazy" alt="Okrągły żyrandol ze świecami pod drewnianym sufitem"></button>
+      <button type="button" data-i="8"><img src="img/g07.webp" width="1100" height="734" loading="lazy" alt="Stoły bankietowe w bibliotece z regałami i ciepłym światłem"></button>
+      <button type="button" data-i="9"><img src="img/g06.webp" width="1200" height="801" loading="lazy" alt="Stół ze świecami i kwiatami nad wodą, pod światło" style="object-position:50% 62%"></button>
+    </div>
+    <p class="gal-count" id="gal-count" aria-hidden="true">1 / 10 · przesuń</p>
+  </div>
+</section>
+
+<!-- ================= INFO PARA INVITADOS ================= -->
+<section id="info" class="section t-butter" aria-labelledby="t-info">
+  <div class="wrap">
+    <div class="max-w-3xl" data-reveal>
+      <h2 id="t-info" class="display h2">Informacje dla gości</h2>
+      <p class="lede mt-6 measure">Jak się poruszać, gdzie spać i co na siebie włożyć. Wszystko, co praktyczne, załatwione z wyprzedzeniem.</p>
+    </div>
+
+    <div class="info-grid">
+      <article class="panel" data-reveal>
+        <h3 class="display">Transport</h3>
+        <div class="rows">
+          <div class="row"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.94,197.23a6,6,0,0,1-8.17-2.29L156.49,70H134V80a6,6,0,0,1-12,0V70H99.51L29.23,194.94a6,6,0,1,1-10.46-5.88L85.74,70H24a6,6,0,0,1,0-12H232a6,6,0,0,1,0,12H170.26l67,119.06A6,6,0,0,1,234.94,197.23ZM128,114a6,6,0,0,0-6,6v16a6,6,0,0,0,12,0V120A6,6,0,0,0,128,114Zm0,56a6,6,0,0,0-6,6v16a6,6,0,0,0,12,0V176A6,6,0,0,0,128,170Z"/></svg><div><b>Z Ogrodów do Palacete</b><span class="sub">4 km · 15 minut samochodem lub taksówką</span></div></div>
+          <div class="row"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M184,34H72A30,30,0,0,0,42,64V208a14,14,0,0,0,14,14H80a14,14,0,0,0,14-14V190h68v18a14,14,0,0,0,14,14h24a14,14,0,0,0,14-14V64A30,30,0,0,0,184,34ZM54,178V118H202v60ZM54,78H202v28H54ZM72,46H184a18,18,0,0,1,18,18v2H54V64A18,18,0,0,1,72,46ZM82,208a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V190H82Zm118,2H176a2,2,0,0,1-2-2V190h28v18A2,2,0,0,1,200,210Zm-98-62a10,10,0,1,1-10-10A10,10,0,0,1,102,148Zm72,0a10,10,0,1,1-10-10A10,10,0,0,1,174,148Zm72-68v24a6,6,0,0,1-12,0V80a6,6,0,0,1,12,0ZM22,80v24a6,6,0,0,1-12,0V80a6,6,0,0,1,12,0Z"/></svg><div><b>Autobus wahadłowy</b><span class="sub">Odjazd z ogrodów o 13:15. Powrót do centrum o 01:30.</span></div></div>
+          <div class="row"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M240,106H227.48l-28-48.95a14,14,0,0,0-12.15-7h-23.3L151.58,18.8a13.93,13.93,0,0,0-13-8.8H117.42a13.93,13.93,0,0,0-13,8.8L91.94,50H68.64a14,14,0,0,0-12.15,7l-28,49H16a6,6,0,0,0,0,12H26v82a14,14,0,0,0,14,14H64a14,14,0,0,0,14-14V182H178v18a14,14,0,0,0,14,14h24a14,14,0,0,0,14-14V118h10a6,6,0,0,0,0-12ZM115.56,23.26A2,2,0,0,1,117.42,22h21.16a2,2,0,0,1,1.86,1.26L151.14,50H104.86ZM66.91,63a2,2,0,0,1,1.73-1H187.36a2,2,0,0,1,1.73,1l24.57,43H42.34ZM66,200a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V182H66Zm150,2H192a2,2,0,0,1-2-2V182h28v18A2,2,0,0,1,216,202Zm2-32H38V118H218ZM58,144a6,6,0,0,1,6-6H80a6,6,0,0,1,0,12H64A6,6,0,0,1,58,144Zm112,0a6,6,0,0,1,6-6h16a6,6,0,0,1,0,12H176A6,6,0,0,1,170,144Z"/></svg><div><b>Taksówka</b><span class="sub">Postój Diagonal–Pedralbes, 200 m od ogrodów.</span></div></div>
+          <div class="row"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M240,194H230V98.67A14,14,0,0,0,223.77,87l-88-58.66a14,14,0,0,0-15.54,0L32.23,87A14,14,0,0,0,26,98.67V194H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM38,98.67A2,2,0,0,1,38.89,97l88-58.67a2,2,0,0,1,2.22,0l88,58.67a2,2,0,0,1,.89,1.66V194H190V136a6,6,0,0,0-6-6H72a6,6,0,0,0-6,6v58H38ZM178,142v20H134V142Zm-56,20H78V142h44ZM78,174h44v20H78Zm56,0h44v20H134Z"/></svg><div><b>Parking Ferran Turné</b><span class="sub">250 m pieszo od Palacete. Parking Diagonal Pedralbes, 300 m od ogrodów.</span></div></div>
+        </div>
+      </article>
+
+      <article class="panel info-dress" data-reveal>
+        <h3 class="display">Dress code: elegancja o zachodzie słońca</h3>
+        <p class="measure mt-3">Ceremonia odbywa się za dnia, a zabawa kończy się nocą: wybierz tkaniny, które zalśnią w złotym świetle świec. Odcienie écru, blush, szampana, burgundu i brązu oraz jedna celowo dobrana ozdoba.</p>
+        <div class="swatches" role="list" aria-label="Sugerowana paleta">
+          <div class="swatch" role="listitem"><i style="background:#F4EADB"></i><span>Écru</span></div>
+          <div class="swatch" role="listitem"><i style="background:#E6C4BA"></i><span>Blush</span></div>
+          <div class="swatch" role="listitem"><i style="background:#D8B173"></i><span>Szampan</span></div>
+          <div class="swatch" role="listitem"><i style="background:#4A2530"></i><span>Burgund</span></div>
+          <div class="swatch" role="listitem"><i style="background:#8A5A2B"></i><span>Brąz</span></div>
+        </div>
+        <div class="dress-cols">
+          <div><h4><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M188.24,67.76a6,6,0,0,1,0,8.48l-16,16a6,6,0,0,1-8.48-8.48l16-16A6,6,0,0,1,188.24,67.76ZM222,72a37.74,37.74,0,0,1-11.13,26.87l-24,24a6,6,0,0,1-3.23,1.67c-52.14,9-138.53,94.84-139.4,95.7a5.81,5.81,0,0,1-1.82,1.25h0A6.12,6.12,0,0,1,40,222a6,6,0,0,1-4.24-10.24h0c1.4-1.41,86.78-87.44,95.69-139.39a6,6,0,0,1,1.67-3.23l24-24A38,38,0,0,1,222,72Zm-12,0a26,26,0,0,0-44.38-18.38L142.93,76.3c-4.14,20.79-18.62,47.61-43.13,79.9,32.29-24.51,59.11-39,79.9-43.13l22.68-22.69A25.79,25.79,0,0,0,210,72Z"/></svg>Tkaniny</h4><p>Jedwab, szyfon, cienki aksamit, len. Faktury, które łapią światło świec, nie błyszcząc zbyt mocno.</p></div>
+          <div><h4><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M233.92,118.14,137.86,22.08a14,14,0,0,0-19.72,0L22.08,118.14a14,14,0,0,0,0,19.72l96.06,96.06h0a14,14,0,0,0,19.72,0l96-96.06a13.94,13.94,0,0,0,0-19.72Zm-8.49,11.24-96.05,96.06a2,2,0,0,1-2.76,0L30.57,129.38a2,2,0,0,1,0-2.76l96.05-96.06a2,2,0,0,1,2.76,0l96.05,96.06a2,2,0,0,1,0,2.76Z"/></svg>Biżuteria</h4><p>Delikatne złoto, perły lub małe kamienie. Wystarczy jeden wyrazisty element.</p></div>
+          <div><h4><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm90,102a89.6,89.6,0,0,1-22.29,59.22L68.78,60.29A89.95,89.95,0,0,1,218,128ZM38,128A89.6,89.6,0,0,1,60.29,68.78L187.22,195.71A89.95,89.95,0,0,1,38,128Z"/></svg>Lepiej unikać</h4><p>Całkowitej bieli (zarezerwowanej dla panny młodej), cekinów, dużych wzorów i dżinsów.</p></div>
+          <div><h4><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M192,114H158V56a14,14,0,0,0-14-14H32a6,6,0,0,0-5.6,8.15c9,23.44,11.13,76.92-.17,116.19A6.21,6.21,0,0,0,26,168v32a14,14,0,0,0,14,14H66.11a14,14,0,0,0,6.26-1.48L85,206.21a2,2,0,0,1,.9-.21h16.22a2,2,0,0,1,.9.21l12.62,6.31a14,14,0,0,0,6.26,1.48h28.22a14,14,0,0,0,6.26-1.48L169,206.21a2,2,0,0,1,.9-.21h16.22a2,2,0,0,1,.9.21l12.62,6.31a14,14,0,0,0,6.26,1.48H232a14,14,0,0,0,14-14V168A54.06,54.06,0,0,0,192,114ZM40.27,54H144a2,2,0,0,1,2,2V82H112a6,6,0,0,0,0,12h34v20H112a6,6,0,0,0,0,12h80a42.05,42.05,0,0,1,41.56,36H39.75C47.11,130.44,48.71,84.31,40.27,54ZM234,200a2,2,0,0,1-2,2H205.89a2,2,0,0,1-.9-.21l-12.62-6.31a14,14,0,0,0-6.26-1.48H169.89a14,14,0,0,0-6.26,1.48L151,201.79a2,2,0,0,1-.9.21H121.89a2,2,0,0,1-.9-.21l-12.62-6.31a14,14,0,0,0-6.26-1.48H85.89a14,14,0,0,0-6.26,1.48L67,201.79a2,2,0,0,1-.9.21H40a2,2,0,0,1-2-2V174H234Z"/></svg>Obuwie</h4><p>Ceremonia odbywa się na trawie: lepiej wybrać szeroki obcas lub płaską podeszwę.</p></div>
+        </div>
+      </article>
+
+      <article class="panel" data-reveal>
+        <h3 class="display">Noclegi</h3>
+        <div class="rows">
+          <div class="row"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,74H30V48a6,6,0,0,0-12,0V208a6,6,0,0,0,12,0V174H242v34a6,6,0,0,0,12,0V112A38,38,0,0,0,216,74ZM30,86h76v76H30Zm88,76V86h98a26,26,0,0,1,26,26v50Z"/></svg><div><b>Hotel Casa Aurelia</b><span class="sub">450 m od Palacete</span></div><span class="price">140–190 € / noc</span></div>
+          <div class="row"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,74H30V48a6,6,0,0,0-12,0V208a6,6,0,0,0,12,0V174H242v34a6,6,0,0,0,12,0V112A38,38,0,0,0,216,74ZM30,86h76v76H30Zm88,76V86h98a26,26,0,0,1,26,26v50Z"/></svg><div><b>Hotel Mirall de Sants</b><span class="sub">1,2 km od Palacete</span></div><span class="price">95–130 € / noc</span></div>
+          <div class="row"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,74H30V48a6,6,0,0,0-12,0V208a6,6,0,0,0,12,0V174H242v34a6,6,0,0,0,12,0V112A38,38,0,0,0,216,74ZM30,86h76v76H30Zm88,76V86h98a26,26,0,0,1,26,26v50Z"/></svg><div><b>Apartaments Torre Lluís</b><span class="sub">2,4 km od Palacete</span></div><span class="price">80–110 € / noc</span></div>
+        </div>
+        <p class="soft text-[0.9375rem] mt-4">Ceny orientacyjne za pokój dwuosobowy. Rezerwuj z wyprzedzeniem: 15 maja przypada na weekend targowy.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MESA DE REGALOS ================= -->
+<section id="regalo" class="section t-cloud" aria-labelledby="t-regalo">
+  <div class="wrap">
+    <div class="max-w-2xl mx-auto text-center" data-reveal>
+      <h2 id="t-regalo" class="display h2">Lista prezentów</h2>
+      <p class="lede mt-6 mx-auto measure">Twoja obecność jest dla nas najlepszym prezentem. Jeśli chcesz dołożyć coś od siebie, wolimy wsparcie podróży poślubnej; a jeśli wolisz przedmiot, zebraliśmy kilka rzeczy do domu.</p>
+      <div class="iban">
+        <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,74H174.74a46.41,46.41,0,0,0,6-4.48,27.56,27.56,0,0,0,9.22-20A30.63,30.63,0,0,0,158.5,18a27.56,27.56,0,0,0-20,9.22A57.1,57.1,0,0,0,128,45.76a57.1,57.1,0,0,0-10.48-18.53A27.56,27.56,0,0,0,97.5,18,30.63,30.63,0,0,0,66,49.51a27.56,27.56,0,0,0,9.22,20,45.74,45.74,0,0,0,6,4.48H40A14,14,0,0,0,26,88v32a14,14,0,0,0,14,14h2v66a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V134h2a14,14,0,0,0,14-14V88A14,14,0,0,0,216,74ZM135.77,63c2.25-12.12,6.29-21.75,11.69-27.85A15.68,15.68,0,0,1,158.86,30h.55A18.6,18.6,0,0,1,178,49.14a15.68,15.68,0,0,1-5.18,11.4C162.1,70,143.92,72.83,134.34,73.65,134.59,70.76,135,67.08,135.77,63ZM83.45,35.45A18.69,18.69,0,0,1,96.59,30h.55a15.68,15.68,0,0,1,11.4,5.18C118,45.9,120.83,64.08,121.65,73.66c-2.89-.25-6.57-.68-10.61-1.43C98.92,70,89.29,65.94,83.19,60.53A15.64,15.64,0,0,1,78,49.14,18.65,18.65,0,0,1,83.45,35.45ZM38,120V88a2,2,0,0,1,2-2h82v36H40A2,2,0,0,1,38,120Zm16,80V134h68v68H56A2,2,0,0,1,54,200Zm148,0a2,2,0,0,1-2,2H134V134h68Zm16-80a2,2,0,0,1-2,2H134V86h82a2,2,0,0,1,2,2Z"/></svg>
+        <code id="iban">ES00 0000 0000 0000 0000 0000</code>
+        <button type="button" class="btn btn-line !min-h-[44px]" id="copy-iban"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,34H88a6,6,0,0,0-6,6V82H40a6,6,0,0,0-6,6V216a6,6,0,0,0,6,6H168a6,6,0,0,0,6-6V174h42a6,6,0,0,0,6-6V40A6,6,0,0,0,216,34ZM162,210H46V94H162Zm48-48H174V88a6,6,0,0,0-6-6H94V46H210Z"/></svg><span id="copy-lab">Kopiuj</span></button>
+      </div>
+      <p class="soft text-[0.9375rem] mt-3">Przykładowy IBAN — zostanie zastąpiony prawdziwym kontem Młodej Pary. Właściciele rachunku: Valeria Durán i Hugo Castellanos.</p>
+      <ul class="gifts">
+        <li><b>Fundusz podróży poślubnej</b><span>Dwa tygodnie w Japonii, w październiku 2027</span></li>
+        <li><b>Zastawa stołowa i szkło</b><span>Na stół w nowym domu</span></li>
+        <li><b>Rośliny na taras</b><span>Oliwka, rozmaryn i oczywiście eukaliptus</span></li>
+      </ul>
+      <a class="btn btn-solid mt-10" href="#">Zobacz listę prezentów <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></a>
+      <p class="soft text-[0.9375rem] mt-3">Przykładowy link.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RSVP ================= -->
+<section id="rsvp" class="section t-latte" aria-labelledby="t-rsvp">
+  <div class="wrap rsvp-grid">
+    <div class="rsvp-aside" data-reveal>
+      <h2 id="t-rsvp" class="display h2">Potwierdź obecność</h2>
+      <p class="lede mt-6 measure">Powiedz nam, czy przyjdziesz, z kim i czego potrzebujesz, by czuć się komfortowo. Zajmie to mniej niż minutę.</p>
+      <p class="deadline"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Z"/></svg><span>Termin: <b class="font-medium">15 marca 2027</b></span></p>
+    </div>
+
+    <div data-reveal>
+      <form id="rsvp-form" action="https://formsubmit.co/demo@valeria-i-hugo-wesele.example" method="POST" novalidate>
+        <!-- demo@valeria-i-hugo-wesele.example to przykładowy adres e-mail: zastąpić prawdziwym i aktywować FormSubmit pierwszym wysłaniem. -->
+        <input type="hidden" name="_subject" value="Nowe potwierdzenie — Wesele Valerii i Hugona, 15.05.2027">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="grid gap-8">
+          <div class="field">
+            <label for="imie">Imię i nazwisko</label>
+            <input type="text" id="imie" name="imie_i_nazwisko" autocomplete="name" required aria-describedby="e-imie">
+            <p class="err" id="e-imie" role="alert"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm-6-82V80a6,6,0,0,1,12,0v56a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,172Z"/></svg><span>Wpisz swoje imię i nazwisko.</span></p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Czy będziesz?</legend>
+            <div class="choice" role="radiogroup" aria-describedby="e-asiste">
+              <label><input type="radio" name="obecnosc" value="Tak, będę" required><span>Tak, będę</span></label>
+              <label><input type="radio" name="obecnosc" value="Nie, nie dam rady" required><span>Nie mogę być</span></label>
+            </div>
+            <p class="err" id="e-asiste" role="alert"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm-6-82V80a6,6,0,0,1,12,0v56a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,172Z"/></svg><span>Wybierz jedną z opcji.</span></p>
+          </fieldset>
+
+          <div class="field" id="f-acomp">
+            <label id="l-acomp" for="acomp-out">Liczba osób towarzyszących</label>
+            <div class="stepper" id="stepper" role="group" aria-labelledby="l-acomp">
+              <button type="button" id="acomp-minus" aria-label="Usuń osobę towarzyszącą"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128Z"/></svg></button>
+              <output id="acomp-out" aria-live="polite">0</output>
+              <button type="button" id="acomp-plus" aria-label="Dodaj osobę towarzyszącą"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button>
+            </div>
+            <input type="hidden" name="osoby_towarzyszace" id="osoby" value="0">
+            <p class="hint">Nie licząc Ciebie. Maksymalnie 4.</p>
+          </div>
+
+          <div class="field">
+            <label for="alergie">Alergie lub ograniczenia żywieniowe</label>
+            <input type="text" id="alergie" name="alergie" placeholder="Np.: bez glutenu, wegetariańskie…">
+          </div>
+
+          <div class="field">
+            <label for="piosenka">Piosenka, której nie może zabraknąć</label>
+            <input type="text" id="piosenka" name="piosenka" placeholder="Tytuł i wykonawca">
+          </div>
+
+          <div class="field">
+            <label for="wiadomosc">Wiadomość dla Młodej Pary</label>
+            <textarea id="wiadomosc" name="wiadomosc" rows="4"></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-solid w-full sm:w-auto" id="rsvp-submit">Wyślij potwierdzenie <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></button>
+            <p class="err mt-4" id="e-send" role="alert"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm-6-82V80a6,6,0,0,1,12,0v56a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,172Z"/></svg><span>Nie udało się wysłać Twojej odpowiedzi. Spróbuj ponownie lub zadzwoń pod numery z sekcji Kontakt.</span></p>
+          </div>
+        </div>
+      </form>
+
+      <div id="rsvp-ok" class="ok-box" role="status" tabindex="-1">
+        <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"/></svg>
+        <h3 class="display text-3xl sm:text-4xl mt-5" id="ok-title">Dziękujemy</h3>
+        <p class="mt-4 measure" id="ok-text"></p>
+        <button type="button" class="btn btn-line mt-8" id="rsvp-again">Wyślij kolejną odpowiedź</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="section t-cloud" aria-labelledby="t-faq">
+  <div class="wrap faq-grid">
+    <header data-reveal>
+      <h2 id="t-faq" class="display h2">Najczęstsze pytania</h2>
+      <p class="lede mt-6 measure">To, o co pytacie najczęściej. Jeśli czegoś brakuje, napiszcie do nas.</p>
+    </header>
+    <div id="faq-list" data-reveal>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="a1" id="q1"><span>Czy mogę przyjść z dziećmi?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button></h3><div class="faq-a" id="a1" role="region" aria-labelledby="q1"><div><p>Są mile widziane. Będzie menu dla dzieci i strefa zabaw do 18:00; po tej godzinie przyjęcie trwa dalej dla dorosłych. Wskaż w formularzu, ile osób przychodzi z Tobą.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="a2" id="q2"><span>Czy jest menu dla osób z alergiami lub nietolerancjami?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button></h3><div class="faq-a" id="a2" role="region" aria-labelledby="q2"><div><p>Tak. Napisz w formularzu o każdej alergii, nietolerancji lub diecie (wegetariańskiej, wegańskiej, bezglutenowej…), a kuchnia Palacete przygotuje każdy przypadek osobno. Termin jest taki sam jak dla potwierdzenia obecności.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="a3" id="q3"><span>Jaki obowiązuje dress code?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button></h3><div class="faq-a" id="a3" role="region" aria-labelledby="q3"><div><p>Elegancja o zachodzie słońca: odcienie écru, blush, szampana, burgundu i brązu, płynne tkaniny, takie jak jedwab czy szyfon, i jedna celowo dobrana ozdoba. Unikaj całkowitej bieli, cekinów i dużych wzorów. Pełną paletę znajdziesz w sekcji <a href="#info">Informacje dla gości</a>.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="a4" id="q4"><span>Gdzie zaparkować?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button></h3><div class="faq-a" id="a4" role="region" aria-labelledby="q4"><div><p>Na ceremonię — na parkingu Diagonal Pedralbes, 300 m od ogrodów. Na przyjęcie — na parkingu Ferran Turné, 250 m od Palacete. Jeśli wolisz nie prowadzić, między oboma miejscami kursuje autobus wahadłowy.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="a5" id="q5"><span>Co jeśli będzie padać?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button></h3><div class="faq-a" id="a5" role="region" aria-labelledby="q5"><div><p>Mamy plan B: ceremonia przenosi się do krytej galerii w ogrodach, przy tej samej alei. Potwierdzimy to wiadomością w przeddzień, przed 18:00. Przyjęcie odbywa się pod dachem.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="a6" id="q6"><span>Do której trwa zabawa?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button></h3><div class="faq-a" id="a6" role="region" aria-labelledby="q6"><div><p>Obiad zaczyna się o 14:00, a zabawa trwa do 02:00, z otwartym barem od 21:00. Ostatni autobus wahadłowy do centrum odjeżdża o 01:30.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="a7" id="q7"><span>Czy mogę robić zdjęcia podczas ceremonii?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button></h3><div class="faq-a" id="a7" role="region" aria-labelledby="q7"><div><p>Wolimy ceremonię bez ekranów: nasz fotograf uchwyci wszystko. Gdy tylko się skończy, rób tyle zdjęć, ile chcesz, i udostępniaj je z #ValeriaIHugo2027.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="a8" id="q8"><span>Czy jest szatnia?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"/></svg></button></h3><div class="faq-a" id="a8" role="region" aria-labelledby="q8"><div><p>Tak, przy wejściu do Palacete, czynna od 13:30 do 02:00. Do dyspozycji wszystkich są także parasole.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MÚSICA ================= -->
+<section id="musica" class="section t-blush" aria-labelledby="t-musica">
+  <div class="wrap">
+    <div class="max-w-2xl mx-auto text-center" data-reveal>
+      <h2 id="t-musica" class="display h2">Muzyka</h2>
+      <p class="lede mt-6 mx-auto measure">Pomóż nam stworzyć ścieżkę dźwiękową tego popołudnia: dodaj do wspólnej playlisty piosenkę, przy której nie usiedzisz w miejscu.</p>
+      <a class="btn btn-solid mt-10" href="#"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M211.69,19.27a6,6,0,0,0-5.15-1.09l-128,32A6,6,0,0,0,74,56V170.11A34,34,0,1,0,86,196V108.68l116-29v58.43A34,34,0,1,0,214,164V24A6,6,0,0,0,211.69,19.27ZM52,218a22,22,0,1,1,22-22A22,22,0,0,1,52,218ZM86,96.32V60.68l116-29V67.32ZM180,186a22,22,0,1,1,22-22A22,22,0,0,1,180,186Z"/></svg>Otwórz playlistę na Spotify</a>
+      <p class="soft text-[0.9375rem] mt-3">Przykładowy link.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="section t-sage" aria-labelledby="t-contacto">
+  <div class="wrap grid gap-14 lg:grid-cols-2 lg:gap-24 lg:items-end">
+    <div data-reveal>
+      <h2 id="t-contacto" class="display h2">Kontakt</h2>
+      <p class="lede mt-6 measure">Jeśli coś nie pasuje do Twojego dnia, napisz lub zadzwoń: odbieramy oboje. I podziel się zdjęciami z naszym hashtagiem.</p>
+      <div class="mt-10 phones">
+        <a class="phone" href="tel:+34600000006"><strong>+34 600 00 00 06</strong><span>Valeria</span></a>
+        <a class="phone" href="tel:+34600000007"><strong>+34 600 00 00 07</strong><span>Hugo</span></a>
+      </div>
+    </div>
+    <div data-reveal>
+      <p class="hashtag">#ValeriaIHugo2027</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot t-wine">
+  <div class="wrap py-20">
+    <div class="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-end">
+      <div>
+        <p class="mono !text-5xl !min-h-0" aria-hidden="true">V · H</p>
+        <p class="display text-3xl sm:text-4xl mt-6 max-w-[22ch]">Do zobaczenia 15 maja.</p>
+        <p class="mt-4 soft">Valeria Durán &amp; Hugo Castellanos · Barcelona · #ValeriaIHugo2027</p>
+      </div>
+      <nav class="foot-links flex flex-wrap gap-x-6 lg:max-w-md lg:justify-end" aria-label="Stopka">
+        <a href="#inicio">Start</a><a href="#historia">Nasza historia</a><a href="#boda">Wesele</a><a href="#galeria">Galeria</a><a href="#info">Informacje dla gości</a><a href="#rsvp">Potwierdź obecność</a><a href="#faq">FAQ</a><a href="#contacto">Kontakt</a>
+      </nav>
+    </div>
+    <p class="mt-16 pt-6 foot-credit soft text-[0.875rem]">Projekt i wykonanie — NGS</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lb" role="dialog" aria-modal="true" aria-label="Powiększona galeria" aria-hidden="true">
+  <button class="lb-btn lb-close" type="button" aria-label="Zamknij"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Poprzednie zdjęcie"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M164.24,203.76a6,6,0,1,1-8.48,8.48l-80-80a6,6,0,0,1,0-8.48l80-80a6,6,0,0,1,8.48,8.48L88.49,128Z"/></svg></button>
+  <figure><img id="lb-img" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-btn lb-next" type="button" aria-label="Następne zdjęcie"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
