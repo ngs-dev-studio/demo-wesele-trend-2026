@@ -1,12 +1,12 @@
-/* Valeria & Hugo — interakcje. Czysty JS; GSAP/ScrollTrigger tylko do animacji wejścia. */
+/* Maria & Jakub — interakcje. Czysty JS; GSAP/ScrollTrigger tylko do animacji wejścia. */
 (function () {
   'use strict';
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Cuenta atrás (sábado 15 de mayo de 2027, 12:30h, hora de Barcelona = CEST) ---------- */
-  var target = new Date('2027-05-15T12:30:00+02:00').getTime();
+  /* ---------- Cuenta atrás (sábado 15 de mayo de 2027, 14:00, czas polski = CEST) ---------- */
+  var target = new Date('2027-05-15T14:00:00+02:00').getTime();
   var cd = { d: $('[data-cd="d"]'), h: $('[data-cd="h"]'), m: $('[data-cd="m"]'), s: $('[data-cd="s"]') };
   function pad(n, l) { n = String(n); while (n.length < l) n = '0' + n; return n; }
   function tick() {
@@ -242,7 +242,7 @@
     var first = v.nombre.split(/\s+/)[0], yes = v.chosen.value.indexOf('Tak') === 0;
     $('#ok-title').textContent = yes ? 'Dziękujemy, ' + first : 'Dziękujemy za odpowiedź, ' + first;
     $('#ok-text').textContent = yes
-      ? 'Otrzymaliśmy Twoje potwierdzenie. Czekamy na Ciebie w sobotę 15 maja 2027: ceremonia o 12:30 w Ogrodach Pedralbes, przyjęcie o 14:00 w Palacete Vilanova.'
+      ? 'Otrzymaliśmy Twoje potwierdzenie. Czekamy na Ciebie w sobotę 15 maja 2027: ceremonia o 14:00 w Ogrodzie Botanicznym, przyjęcie o 16:00 w Pałacyku Dobrzańskich.'
       : 'Przykro nam, że nie możesz być z nami. Zapisaliśmy Twoją odpowiedź i będziemy o Tobie myśleć tego dnia. Jeśli coś się zmieni, napisz do nas.';
     form.style.display = 'none'; ok.classList.add('show'); ok.focus({ preventScroll: true });
     ok.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
