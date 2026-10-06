@@ -9,3 +9,9 @@ Jednostronicowa strona z zaproszeniem dla **fikcyjnej** pary (Maria Kowalczyk i 
 Dane przykładowe: IBAN `PL00 0000 0000 0000 0000 0000 0000`, telefony `+48 600 000 006/007` i e-mail `demo@maria-i-jakub-wesele.example` to atrapy. Przy tym adresie (zarezerwowana domena `.example`) formularz symuluje wysyłkę; przy prawdziwym adresie `script.js` wysyła dane do FormSubmit (pierwsze wysłanie wymaga aktywacji z maila potwierdzającego).
 
 Nie wymaga budowania: wdraża się bez zmian na GitHub Pages.
+
+## Zdjęcia — autorzy i licencje
+
+- `img/historia-1.webp` — „Kamienica, ul. Meiselsa 4, Kazimierz, Kraków”, autor: Mach240390, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0), Wikimedia Commons (kadr i kompresja zmienione).
+- `img/historia-2.webp` — „Bieszczadzka Kolejka Leśna”, autor: Jano0, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), Wikimedia Commons (kadr i kompresja zmienione).
+- Pozostałe zdjęcia: Unsplash (licencja Unsplash), źródła w plikach `.json`.
