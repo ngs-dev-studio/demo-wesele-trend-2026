@@ -39,7 +39,7 @@
   /* ---------- Scroll más lento y suave (Lenis): rueda al 55%, táctil nativo ---------- */
   var lenis = null;
   if (!reduce && window.Lenis) {
-    lenis = new Lenis({ lerp: 0.07, wheelMultiplier: 0.55, smoothWheel: true });
+    lenis = new Lenis({ lerp: 0.1, wheelMultiplier: 0.9, smoothWheel: true });
     (function raf(t) { lenis.raf(t); requestAnimationFrame(raf); })(performance.now());
     document.addEventListener('click', function (e) {
       var a = e.target.closest && e.target.closest('a[href^="#"]');
@@ -136,7 +136,7 @@
   function show(i) {
     cur = (i + shots.length) % shots.length;
     var im = $('img', shots[cur]);
-    lbImg.src = im.currentSrc || im.src; lbImg.alt = im.alt; lbCap.textContent = im.alt + ' · ' + (cur + 1) + ' / ' + shots.length;
+    lbImg.src = im.src; lbImg.alt = im.alt; lbCap.textContent = im.alt + ' · ' + (cur + 1) + ' / ' + shots.length;
   }
   function openLb(i) {
     lastFocus = document.activeElement; show(i);
@@ -149,7 +149,7 @@
     lockScroll(false);
     if (lastFocus) lastFocus.focus();
   }
-  shots.forEach(function (b, i) { b.addEventListener('click', function () { openLb(i); }); b.setAttribute('aria-label', 'Powiększ zdjęcie ' + (i + 1) + ' z ' + shots.length); });
+  shots.forEach(function (b, i) { b.addEventListener('click', function () { openLb(i); }); b.setAttribute('aria-label', 'Powiększ zdjęcie ' + (i + 1) + ' z ' + shots.length + ': ' + $('img', b).alt); });
   $('.lb-close', lb).addEventListener('click', closeLb);
   $('.lb-prev', lb).addEventListener('click', function () { show(cur - 1); });
   $('.lb-next', lb).addEventListener('click', function () { show(cur + 1); });
